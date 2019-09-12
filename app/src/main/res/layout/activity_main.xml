@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+android:background="@color/colorPrimary"
+    android:textAlignment="center"
+    tools:context=".MainActivity"
+    android:layout_gravity="center"
+    android:gravity="center">
+
+    <LinearLayout
+        android:layout_width="379dp"
+        android:layout_height="659dp"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv"
+            android:layout_width="222dp"
+            android:layout_height="wrap_content"
+            android:text="Calculator"
+            android:textAlignment="center"
+            android:textAllCaps="true"
+            android:textColor="@color/White"
+            android:textSize="30dp"
+            android:textStyle="bold" />
+
+
+        <EditText
+            android:id="@+id/number1"
+            android:layout_width="155dp"
+            android:layout_height="45dp"
+            android:layout_marginTop="30dp"
+            android:hint="Enter first number"
+            android:inputType="numberDecimal" />
+
+        <EditText
+            android:id="@+id/number2"
+            android:layout_width="155dp"
+            android:layout_height="45dp"
+            android:layout_marginTop="20dp"
+
+            android:hint="Enter second number"
+            android:inputType="numberDecimal"
+
+
+            />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="30dp">
+
+        <Button
+            android:id="@+id/plus"
+            android:layout_width="84dp"
+            android:layout_height="46dp"
+            android:background="@color/orange"
+            android:text="+"
+            android:textColor="@color/White"
+            android:textSize="30dp"
+
+
+            />
+
+            <Button
+                android:id="@+id/minus"
+                android:layout_width="84dp"
+                android:layout_height="46dp"
+                android:layout_marginLeft="40dp"
+                android:background="@color/orange"
+                android:text="-"
+                android:textColor="@color/White"
+                android:textSize="30dp" />
+
+        </LinearLayout>
+        <LinearLayout android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp">
+
+            <Button
+                android:id="@+id/multi"
+                android:layout_width="84dp"
+                android:layout_height="46dp"
+                android:background="@color/orange"
+                android:text="x"
+                android:textColor="@color/White"
+                android:textSize="30dp" />
+
+
+            <Button
+            android:id="@+id/divide"
+            android:layout_width="84dp"
+            android:layout_height="46dp"
+                android:layout_marginLeft="40dp"
+            android:background="@color/orange"
+            android:text="/"
+            android:textColor="@color/White"
+            android:textSize="30dp" />
+        </LinearLayout>
+
+            <TextView
+            android:id="@+id/answer"
+            android:layout_width="181dp"
+            android:layout_height="42dp"
+          android:layout_marginTop="30dp"
+            android:background="@color/black"
+            android:hint="Answer"
+            android:textAlignment="center"
+            android:textColor="@color/White"
+            android:textColorHint="@color/gre"
+            android:textSize="20dp" />
+
+        <Button
+            android:id="@+id/clearr"
+            android:layout_width="149dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@color/black"
+            android:text="CLEAR"
+            android:textColor="@color/White" />
+
+    </LinearLayout>
+</LinearLayout>
